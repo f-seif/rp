@@ -1,7 +1,5 @@
 import PropTypes from "prop-types";
 
-
-
 const Profile = ({data={fullName: "Ahmed", bio: "Ahmed's bio", profession: "Teacher"}, handleName}) => {
   return (
     <>
@@ -18,7 +16,5 @@ Profile.propTypes = {
  data: PropTypes.object,
  handleName: PropTypes.func,
 };
-
-
 
 export default Profile;
