@@ -14,10 +14,15 @@ const Profile = ({data, handleName}) => {
   );
 }
 
+Profile.defaultProps = {
+  data.fullName : "Ahmed",
+  data.bio: "Ahmed's bio",
+  data.profession: "Chef"
+};
+
 Profile.propTypes = {
- fullName: PropTypes.string,
- bio: PropTypes.string,
- profession: PropTypes.string
+ data: PropTypes.object,
+ handleName: PropTypes.func,
 };
 
 
