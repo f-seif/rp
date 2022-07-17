@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 
 
-const Profile = ({data, handleName}) => {
+const Profile = ({data={fullName: "Ahmed", bio: "Ahmed's bio", profession: "Teacher"}, handleName}) => {
   return (
     <>
       <image>Image</image>
@@ -13,12 +13,6 @@ const Profile = ({data, handleName}) => {
     </>
   );
 }
-
-Profile.defaultProps = {
-  data.fullName : "Ahmed",
-  data.bio: "Ahmed's bio",
-  data.profession: "Chef"
-};
 
 Profile.propTypes = {
  data: PropTypes.object,
